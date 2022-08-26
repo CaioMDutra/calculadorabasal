@@ -10,7 +10,7 @@ function calcularTip(event){
     
 
     const radioButtons = document.querySelectorAll('input[name="sex"]');//Aqui declaramos uma constante ela ira selecionar todos os valores do radio na index com nome de 'sex'.
-    //'const' tbm é um meio de atribuir variavel, porém o valor de uma const não pode ser alterado (eu acho kkkkkk).
+    
     
             let sexo3;// Agora sim declaramos a variavel 'sexo3' sem parametros, ele será atribuido no final.
             for (const radioButton of radioButtons) {
