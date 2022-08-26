@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora Basal</title>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h1 class="titulo">Calculadora Basal</h1>
+        </div>
+        <hr>
+        <div>
+            <p class="descricao">1º ETAPA - Como determinar a taxa de metabolismo basal (TMB)</p>
+            <p class="descricao">É o total de calorias gastas para manter as funções vitais, como os batimentos cardíacos, a pressão arterial e a temperatura corporal:</p>
+            <hr>
+                <div>
+                   <p>Sexo:</p>
+                        <form><!-- Aqui no radio buttons, todos os inputs recebe o nome de 'sex'.-->
+                        <input type="radio" name="sex" id="homem" value="M">
+                        <label for="css">Homem</label><br>
+                        <input type="radio" name="sex" id="mulher" value="F">
+                        <label for="css">Mulher</label><br>
+                        </form>
+                         <!--<p><select id="sexo3" class="formselect">
+                            <option disabled selected>-- Informe seu sexo</option>
+                            <option id="01" value="M">Homem</option>
+                            <option id="02" value="F">Mulher</option>
+                        </select></p>-->
+                </div>        
+                <form class="tipsform" id="tipsForm1">
+                    <label for="weight">
+                        <p>Peso:</p>
+                    </label>
+                    <p><input id="peso" class="forminput" type="number" placeholder="Em quilos" name="weight" required> KG</p>
+                    <label for="height">
+                        <p>Estatura:</p>
+                    </label>
+                    <p><input id="altura" class="forminput" type="number" placeholder="Em centimetros" name="height" required> CM</p>
+                    <label for="age">
+                        <p>Idade:</p>
+                    </label>
+                    <p><input id="idade" class="forminput" type="number" placeholder="100" name="age"> Anos</p>
+                    <label for="nivelatividade">
+                        <p>Nível de atividade:</p>
+                    </label>
+                    <p><select id="selecao" class="formselect">
+                        <option disabled selected>-- Escolha uma opção</option>
+                        <option id="01" value="1.2">Sedentário</option>
+                        <option id="02" value="1.375">Levemente ativo</option>
+                        <option id="03" value="1.55">Moderadamente ativo</option>
+                        <option id="04" value="1.725">Altamente ativo</option>
+                        <option id="05" value="1.9">Extremamente ativo</option>
+                    </select></p>
+                    <button onclick"calcularTrip()" class="formsubmit" type="submit">Calcular</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="totaltmb">
+        <p>Taxa Metabólica Basal estimada:</p><span id="tmb1" class="tmb"></span>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
